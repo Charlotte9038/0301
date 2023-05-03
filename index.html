@@ -1,34 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<title>HTML練習</title>
+<meta charset="utf-8">
+<title>0503</title>
+<style type="text/css">
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #F1E7A0;
+    -webkit-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1:hover {
+    width: 200px;
+    height: 200px;
+    font-size: 54px;
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: #B2E7FD;
+    -webkit-transition: all 1000ms ease-in-out 0s;
+    -o-transition: all 1000ms ease-in-out 0s;
+    transition: all 1000ms ease-in-out 0s;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1:hover {
+    background-color: #DBF4D4;
+}
+.box2:hover {
+    background-color: #F1BDDC;
+	transform: translate(20px, 20px);
+}
+.box3 {
+    background-color: #C1FFC6;
+    width: 100px;
+    height: 100px;
+    text-align: left;
+    margin-top: 5px;
+}
+.box3 {
+    -webkit-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box3:hover {
+    background-color: #EACDF0;
+	transform: rotate(360deg); 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+</style>
 </head>
+
 <body>
-
-<h1>焦糖伯爵乳酪慕斯食譜</h1>
-<h2>食材：</h2>
-<ul>
-<li>LOTUS蓮花餅乾90g
-<li>牛油30g</li>
-<li>奶油奶酪250g</li>
-<li>糖粉35g</li>
-<li>牛奶25g</li>
-<li>伯爵紅茶包1包（2g）</li>
-<li>淡奶油150g</li>
-<li>吉利丁片15g</li>
-<li>LOTUS蓮花餅乾40g
-</li></ul>
-
-<p>超高顏值的「焦糖伯爵乳酪慕斯」，不需要烤箱就能完成，<br>不僅好吃又能瞬間把家裡變成咖啡廳，不如趁著周末有空的時候，動手做一做吧！</p>
-<h2>圖片</h2>
-<img src=" https://static.styletc.com/images/content/72/128372/a3b52fbed773acd25393c3b6735ca380.jpg">
-
-<h2>影片</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yO-r955tS-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<p>
-<a href="https://www.styletc.com/article/128372">連結</a>
-</p>
-
+<div class="container">
+<div class="box1"> 縮放 </div>
+<div class="box2"> 位移 </div>
+<div class="box3"> 旋轉 </div>
+</div>
 </body>
 </html>
